@@ -5,7 +5,7 @@ This package will log errors into MySQL database instead storage/log/laravel.log
 ### Installation
 
 ~~~
-composer require markhilton/monolog-mysql
+composer require gmg/monolog-mysql
 ~~~
 
 Open up `config/app.php` and find the `providers` key.
