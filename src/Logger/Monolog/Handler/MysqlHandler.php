@@ -23,7 +23,7 @@ class MysqlHandler extends AbstractProcessingHandler
     protected function write(array $record)
     {
         $data = [
-            'instance'    => gethostname(),
+            'instance'    => env('APP_URL','localhost'),
             'message'     => json_encode($record['message']),
             'channel'     => $record['channel'],
             'level'       => $record['level'],
