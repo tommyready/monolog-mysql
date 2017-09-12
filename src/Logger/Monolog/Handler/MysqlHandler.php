@@ -46,7 +46,7 @@ class MysqlHandler extends AbstractProcessingHandler
             'channel'     => $record['channel'],
             'level'       => $record['level'],
             'level_name'  => $record['level_name'],
-            'context'     => $record['context'],
+            'context'     => json_encode($record['context']),
             'remote_addr' => $userIP,
             'user_agent'  => $userAgent,
             'created_by'  => Auth::id() > 0 ? Auth::id() : null,
